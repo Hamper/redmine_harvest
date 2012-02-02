@@ -2,7 +2,7 @@
 
 ==Installation
 
-- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins, according to the way you've obtained the plugin (this plugin does not require a plugin database migration)
+- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins, according to the way you've obtained the plugin (don't forget to run the migration).
 - Restart Redmine
 
 ==Global setup
