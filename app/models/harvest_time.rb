@@ -29,7 +29,6 @@ class HarvestTime < ActiveRecord::Base
   
   def self.import_time(project)
     harvest_project_id = self.project_id(project)
-    #harvest_project_id = 408960
     # From date of last job for project minus 1 week;  Default to 1 year ago.
     from_date = HarvestTime.maximum(:created_at, :conditions=>{:project_id => project.id})
     from_date = from_date.nil? ? 1.year.ago : from_date - 1.week 
