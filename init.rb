@@ -1,4 +1,3 @@
-require 'dispatcher'
 require 'redmine'
 require 'harvestr'
 #require 'vendor/plugins/redmine_harvest/lib/harvest'
