@@ -1,5 +1,4 @@
 Rails.application.routes.draw do |map|
-  map.connect 'projects/:project_id/harvest_reports',
-              :controller => 'harvest_reports', :action => 'index'
+  match 'projects/:project_id/harvest_reports' => 'harvest_reports#index'
 end
 
