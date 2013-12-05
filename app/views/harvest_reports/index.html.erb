@@ -1,6 +1,6 @@
 <h2><%= l(:label_spent_time) %></h2>
 
-<% form_remote_tag( :url => {}, :html => {:method => :get, :id => 'query_form'}, :method => :get, :update => 'content' ) do %>
+<% form_tag( :url => {}, :html => {:method => :get, :id => 'query_form'}, :method => :get, :update => 'content', :remote => true ) do %>
   <%= hidden_field_tag('project_id', params[:project_id]) if @project %>
   <%= hidden_field_tag 'issue_id', params[:issue_id] if @issue %>
   <%= render :partial => 'date_range' %>

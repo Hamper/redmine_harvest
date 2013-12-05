@@ -17,8 +17,9 @@
 </div>
 </fieldset>
 <p class="buttons">
-	<%= link_to_remote l(:button_apply), 
+	<%= link_to l(:button_apply),
 	                   { :url => { },
+                         :remote => true,
 	                     :update => "content",
                             :with => "Form.serialize('query_form')",
                             :method => :get
