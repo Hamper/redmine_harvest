@@ -2,7 +2,7 @@
 
 ==Installation
 
-- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins, according to the way you've obtained the plugin (this plugin does not require a plugin database migration)
+- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins, according to the way you've obtained the plugin (don't forget to run the migration).
 - Restart Redmine
 
 ==Global setup
@@ -15,6 +15,11 @@ Before you can actually use the plugin within the preferred projects some setup 
   * select the project custom field which contains the "Harvest Project ID"; 
   * select the user custom field "Harvest User ID";
   * Click "Apply"
+- Create config/harvest.yml in your Redmine root like so:
+
+    domain: [yourdomain].harvestapp.com
+    email: [account email with api privileges]
+    password: [guesswhat]
 
 ==Project level setup
 
