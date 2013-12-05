@@ -38,7 +38,7 @@ class HarvestTime < ActiveRecord::Base
     
     harvest_user_custom_field_id = Setting.plugin_redmine_harvest['harvest_user_id']
     
-    harvest_entries = Harvest.report.project_entries(harvest_project_id, from_date, to_date)
+    harvest_entries = Harvest.report.project_entries(harvest_project_id, from_date.strftime("%Y%m%d"), to_date.strftime("%Y%m%d"))
     harvest_entries.each do |entry|
       entry.project_id = project.id
       
